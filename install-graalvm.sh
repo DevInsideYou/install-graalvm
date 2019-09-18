@@ -14,6 +14,7 @@ URL="https://github.com/oracle/graal/releases/download/vm-${VERSION}/graalvm-ce-
 TARGET="graalvm-ce-19.2.0.1"
 ARCHIVE="${TARGET}.tar.gz"
 JVM_LIB_DIRECTORY="/usr/lib/jvm"
+CURRENT_DIRECTORY=$(pwd)
 
 # chande directory to /usr/lib/jvm
 cd ${JVM_LIB_DIRECTORY}
@@ -57,4 +58,4 @@ echo
 java -version
 
 # remove yourself
-rm $0
+rm "${CURRENT_DIRECTORY}/$0"

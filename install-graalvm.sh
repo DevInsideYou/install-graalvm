@@ -57,5 +57,7 @@ echo "Run '${GRAALVM_DIRECTORY}/bin/gu install native-image' without the single 
 echo
 java -version
 
+cd ${CURRENT_DIRECTORY}
+
 # remove yourself
-rm "${CURRENT_DIRECTORY}/$0"
+rm $0

@@ -5,7 +5,7 @@ wget -q https://script.install.devinsideyou.com/graalvm
 sudo chmod +x graalvm && ./graalvm
 ```
 
-# Speicfies [version](https://github.com/oracle/graal/releases) (optional)
+# Specifies [version](https://github.com/oracle/graal/releases) (optional)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/graalvm

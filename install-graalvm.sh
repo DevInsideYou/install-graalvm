@@ -32,7 +32,7 @@ LINK="graalvm"
 
 # symlink it for simplicity
 # we assume here that ${TARGET} directory exists after the extraction
-sudo ln -sf ${TARGET} ${LINK}
+sudo ln -sfn ${TARGET} ${LINK}
 
 GRAALVM_DIRECTORY="${JVM_LIB_DIRECTORY}/${LINK}"
 

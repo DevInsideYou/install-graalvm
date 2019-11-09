@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" == "" ]; then
-    VERSION="19.2.0.1"
+    VERSION="19.2.1"
 else
     VERSION="$1"
 fi

@@ -1,4 +1,4 @@
-# Installs [GraalVM CE 19.3.0.2](https://www.graalvm.org/) with [Java 8](https://openjdk.java.net/) on [Ubuntu](https://www.ubuntu.com/)
+# Installs [GraalVM CE 19.3.0.2](https://www.graalvm.org/) with [Java 11](https://openjdk.java.net/) on [Ubuntu](https://www.ubuntu.com/)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/graalvm

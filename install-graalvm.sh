@@ -1,20 +1,27 @@
 #!/bin/bash
 
+# remove yourself
+rm $0
+
 if [ "$1" == "" ]; then
-    VERSION="19.2.1"
+    JAVA_VERSION="11"
 else
-    VERSION="$1"
+    JAVA_VERSION="$1"
 fi
 
+if [ "$2" == "" ]; then
+    GRAAL_VM_VERSION="19.3.0.2"
+else
+    GRAAL_VM_VERSION="$1"
+fi
 
 # install curl
 sudo apt install -yqqq curl
 
-URL="https://github.com/oracle/graal/releases/download/vm-${VERSION}/graalvm-ce-linux-amd64-${VERSION}.tar.gz"
-TARGET="graalvm-ce-${VERSION}"
+URL="https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${GRAAL_VM_VERSION}/graalvm-ce-java${JAVA_VERSION}-linux-amd64-${GRAAL_VM_VERSION}.tar.gz"
+TARGET="graalvm-ce-java${JAVA_VERSION}-${GRAAL_VM_VERSION}"
 ARCHIVE="${TARGET}.tar.gz"
 JVM_LIB_DIRECTORY="/usr/lib/jvm"
-CURRENT_DIRECTORY=$(pwd)
 
 # chande directory to /usr/lib/jvm
 cd ${JVM_LIB_DIRECTORY}
@@ -57,7 +64,7 @@ echo "Run '${GRAALVM_DIRECTORY}/bin/gu install native-image' without the single 
 echo
 java -version
 
-cd ${CURRENT_DIRECTORY}
+ls -l ${JVM_LIB_DIRECTORY}
 
-# remove yourself
-rm $0
+echo
+echo "You might want to remove older versions from ${JVM_LIB_DIRECTORY}"

@@ -65,7 +65,7 @@ echo
 java -version
 
 echo
-ls -l ${JVM_LIB_DIRECTORY}
+ls -l ${JVM_LIB_DIRECTORY} | grep graalvm
 
 echo
 echo "You might want to remove older versions from ${JVM_LIB_DIRECTORY}"

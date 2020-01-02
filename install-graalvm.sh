@@ -64,6 +64,7 @@ echo "Run '${GRAALVM_DIRECTORY}/bin/gu install native-image' without the single 
 echo
 java -version
 
+echo
 ls -l ${JVM_LIB_DIRECTORY}
 
 echo

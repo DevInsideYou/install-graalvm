@@ -1,4 +1,4 @@
-# Installs [GraalVM CE 19.3.0.2](https://www.graalvm.org/) with [Java 11](https://openjdk.java.net/) on [Ubuntu](https://www.ubuntu.com/)
+# Installs [GraalVM CE 19.3.1](https://www.graalvm.org/) with [Java 11](https://openjdk.java.net/) on [Ubuntu](https://www.ubuntu.com/)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/graalvm
@@ -9,7 +9,7 @@ chmod +x graalvm && sudo ./graalvm
 
 ```bash
 wget -q https://script.install.devinsideyou.com/graalvm
-chmod +x graalvm && sudo ./graalvm 11 19.3.0.2
+chmod +x graalvm && sudo ./graalvm 11 19.3.1
 ```
 
 # Specifies [just the Java version](https://github.com/graalvm/graalvm-ce-builds/releases) (optional)

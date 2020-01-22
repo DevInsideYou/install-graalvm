@@ -12,7 +12,7 @@ fi
 if [ "$2" == "" ]; then
     GRAAL_VM_VERSION="19.3.0.2"
 else
-    GRAAL_VM_VERSION="$1"
+    GRAAL_VM_VERSION="$2"
 fi
 
 # install curl

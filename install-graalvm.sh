@@ -10,7 +10,7 @@ else
 fi
 
 if [ "$2" == "" ]; then
-    GRAAL_VM_VERSION="20.1.0"
+    GRAAL_VM_VERSION="20.2.0"
 else
     GRAAL_VM_VERSION="$2"
 fi
